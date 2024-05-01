@@ -1977,3 +1977,27 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #fed136;
 }
+/* General styles for responsive images and centering */
+.img-responsive {
+    width: 100%; /* Makes the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Removes extra space below the image */
+}
+
+/* Media query for devices with a max-width of 768px (Tablets and smaller devices) */
+@media (max-width: 768px) {
+    .col-md-8 {
+        float: none;
+        margin: 0 auto; /* Center the column */
+        width: 90%; /* Adjust the width as needed */
+    }
+
+    .col-md-offset-2 {
+        margin: 0; /* Remove offset on smaller devices */
+    }
+
+    /* Additional styling adjustments for smaller screens can be added here */
+}
+
+/* You might want to adjust icons and text sizes as well for smaller screens */
+
